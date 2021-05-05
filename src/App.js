@@ -4,7 +4,9 @@ import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
+import Rating from './components/Rating';
 import data from './data/berlin.json';
+import BoxColor from './components/BoxColor';
 
 function App() {
   return (
@@ -35,10 +37,24 @@ function App() {
         <Greetings lang="fr">François</Greetings>
       </div>
 
-      <div id='randomValue'>
+      <div id="randomValue">
         <h1>Random</h1>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
+      </div>
+
+      <div id="boxColor">
+        <h1>BoxColor</h1>
+        <BoxColor r={127} g={12} b={255} />
+        <BoxColor r={128} g={255} b={0} />
+      </div>
+      <div>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
       </div>
     </div>
   );

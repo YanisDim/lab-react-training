@@ -9,8 +9,9 @@ import React, { Component } from 'react'
             color = 'black'
         }
         return (
-            <div>
-                
+            <div id='BoxColor' style={{backgroundColor: `rgb(${r},${g},${b})`, color: color}}>
+                rgb ({r}, {g}, {b})<br/>
+                {hex}
             </div>
         )
     }
